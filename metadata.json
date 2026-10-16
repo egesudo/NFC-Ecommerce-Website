@@ -1,0 +1,6 @@
+{
+  "name": "Gen Z Bilişim — Akıllı NFC Kart Mağazası",
+  "description": "Gen Z Bilişim akıllı temassız NFC kartvizit ve masa standları e-ticaret platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
