@@ -259,3 +259,34 @@
 .animate-whatsapp-bob {
   animation: whatsapp-bob 3s infinite ease-in-out;
 }
+
+/* Dynamic Animated Gradient Flow & Glow for Corporate Section & Buttons */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-flow {
+  background-size: 250% 250%;
+  animation: gradient-flow 6s ease infinite;
+}
+
+@keyframes corporate-glow {
+  0%, 100% {
+    box-shadow: 0 10px 30px -5px rgba(29, 78, 216, 0.3), 0 0 15px rgba(79, 70, 229, 0.15);
+  }
+  50% {
+    box-shadow: 0 15px 35px -5px rgba(13, 148, 136, 0.4), 0 0 25px rgba(37, 99, 235, 0.25);
+  }
+}
+
+.animate-corporate-glow {
+  animation: corporate-glow 5s ease-in-out infinite;
+}
