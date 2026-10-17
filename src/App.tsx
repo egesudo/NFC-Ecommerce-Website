@@ -13,6 +13,7 @@ import { CartDrawer } from './components/CartDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { CardCustomizerModal } from './components/CardCustomizerModal';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { 
   CheckCircle2, 
   ShoppingBag, 
@@ -237,13 +238,21 @@ const MainContent: React.FC = () => {
         )}
       </nav>
 
+      {/* Floating Bottom WhatsApp Communication Button */}
+      <WhatsAppButton
+        phoneNumber="905XXXXXXXXXX"
+        message="NFC kart ücretleriniz nedir , öğrenebilir miyim ?"
+        bubbleText="NFC Kartlar hakkında bilgi al! 😊"
+        position="right"
+      />
+
       {/* Floating Toast Notification with WCAG aria-live region */}
       {toastMessage && (
         <div 
           role="status" 
           aria-live="polite" 
           aria-atomic="true"
-          className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white text-xs font-semibold py-3 px-4 rounded-xl shadow-2xl border border-white/10 flex items-center gap-2.5 animate-in slide-in-from-bottom-4 duration-200"
+          className="fixed bottom-28 sm:bottom-28 right-6 z-50 bg-slate-900 text-white text-xs font-semibold py-3 px-4 rounded-xl shadow-2xl border border-white/10 flex items-center gap-2.5 animate-in slide-in-from-bottom-4 duration-200"
         >
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
           <span>{toastMessage}</span>
